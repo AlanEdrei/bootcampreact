@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
 
+const Mensaje = (props) => {
+  return <div>
+    <h1 style={{color:props.color}} >{props.Texto}</h1>
+  </div>
+}
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Mensaje Texto="HELLOOO!" color="red"/>
+      Hoooola 
     </div>
   );
 }
